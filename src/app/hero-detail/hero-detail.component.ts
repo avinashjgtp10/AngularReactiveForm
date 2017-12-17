@@ -26,6 +26,15 @@ export class HeroDetailComponent implements OnInit {
   ngOnInit() {
   }
 
+  // this.heroForm.setValue({
+  //   name:    this.hero.name,
+  //   address: this.hero.addresses[0] || new Address()
+  // });
+
+  // this.heroForm.patchValue({
+  //   name: this.hero.name
+  // });
+  
   createForm(){
     this.heroForm=this.fb.group({
       name: ['',Validators.required],
@@ -34,10 +43,6 @@ export class HeroDetailComponent implements OnInit {
       sidekick: ''
     });
   }
-
-  // this.heroForm.setValue({
-  //   name: this.hero.name,
-  // });
 
 
 }
